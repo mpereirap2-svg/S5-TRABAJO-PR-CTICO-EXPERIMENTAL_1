@@ -3,18 +3,35 @@
     "id": 1,
     "nombre": "Ana",
     "apellido": "Pérez",
-    "email": "ana@ejemplo.com",
-    "telefono": "0987654321",
-    "ciudad": "Guayaquil",
-    "direccion": "Av. Principal 123"
+    "email": "ana@escuela.edu",
+    "carnet": "EST2026001",
+    "notas": {
+      "Matemática": [18, 19],
+      "Inglés": [16]
+    },
+    "materias": ["Inglés", "Matemática"]
   },
   {
     "id": 2,
     "nombre": "Luis",
     "apellido": "García",
-    "email": "luis@ejemplo.com",
-    "telefono": "",
-    "ciudad": "Milagro",
-    "direccion": "Calle 5 y Pichincha"
+    "email": "luis@escuela.edu",
+    "carnet": "EST2026002",
+    "notas": {
+      "Inglés": [15],
+      "Historia": [14]
+    },
+    "materias": ["Historia", "Inglés"]
+  },
+  {
+    "id": 3,
+    "nombre": "Sol",
+    "apellido": "Torres",
+    "email": "sol@escuela.edu",
+    "carnet": "EST2026003",
+    "notas": {
+      "Matemática": [12]
+    },
+    "materias": ["Matemática"]
   }
 ]

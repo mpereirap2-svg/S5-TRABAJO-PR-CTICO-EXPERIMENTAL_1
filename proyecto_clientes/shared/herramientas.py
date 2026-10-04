@@ -1,6 +1,5 @@
 import os
 
-# DICCIONARIO: cada color tiene su etiqueta y su código de consola
 COLORES = {
     "ROJO": "\033[91m",
     "VERDE": "\033[92m",
@@ -11,7 +10,7 @@ COLORES = {
     "RESET": "\033[0m",
 }
 
-# TUPLA: respuestas afirmativas aceptadas. Es fija, por eso no es lista.
+
 RESPUESTAS_SI = ("si", "sí", "s", "yes", "y")
 
 
@@ -20,7 +19,7 @@ def limpiar_pantalla():
 
 
 def imprimir_color(texto, color):
-    codigo = COLORES.get(color, COLORES["BLANCO"])   # .get evita el error si el color no existe
+    codigo = COLORES.get(color, COLORES["BLANCO"])   
     print(f"{codigo}{texto}{COLORES['RESET']}")
 
 
@@ -45,13 +44,13 @@ def imprimir_info(mensaje):
 
 
 def confirmar(pregunta):
-    # Devuelve True si el usuario respondió algo de la tupla RESPUESTAS_SI
+    
     respuesta = input(f"{pregunta} (si/no): ").strip().lower()
     return respuesta in RESPUESTAS_SI
 
 
 def es_email_valido(texto):
-    # Validación mínima: un @, algo antes, algo después y un punto al final
+    
     texto = texto.strip()
     if texto.count("@") != 1:
         return False
